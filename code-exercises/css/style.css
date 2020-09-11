@@ -7,6 +7,7 @@ h1 {
 color:#AAF2A2;
 }
 
-img .test-screenshot {
+.test-screenshot {
 width: 10%;
+position: relative;
 }
