@@ -1,9 +1,16 @@
 body{
-
+background-color: SkyBlue;
 }
 
-h1 {
-color:#DCA2F2;
+p {
+  font-family: Arial, sans-serif;
+  font-size:52px;
+  font-weight:500;
+  text-align:center;
+  width: 100%;
+  margin: 0 auto;
+  top: 65px;
+  position:relative;
 }
 
 @media screen and (max-width: 1000px) {
