@@ -3,29 +3,19 @@ background-color:#26C10A;
 margin-left: 5%;
 }
 
-h1 {
-color:#AAF2A2;
-}
-
-.rad-movie-poster {
-width: 10%;
-position: relative;
-}
-
 .container {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.movie-poster {
   background-image: url("../img/hot.png");
-  height: 300px;
+  background-size: cover;
+  height:300px;
+  margin: 0 auto;
+  width:50%;
+
+}
+
+h1 {
+  color: #fff;
+  font-size:52px;
+  position:relative;
+  text-align:center;
+
 }
