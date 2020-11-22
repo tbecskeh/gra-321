@@ -1,16 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Responsive Project</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="#">
-    <meta name="keywords" content="#">
-    <meta name="author" content="#">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
 
-  <body>
-  <h1>Welcome to Responsive Project!</h1>
-  </body>
+<head>
+  <title>Charlie's Cafe</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="John Doe">
+  <link rel=“icon” type=“image/png” href=“img/“ />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel=“stylesheet” type=“text/css” href=“css/normalize.css”>
+  <link rel=“stylesheet” type=“text/css” href=“css/style.css”>
+</head>
+
+<!--Syntax for Comments-->
+
+<!--Overall body of document start. Anything in here (besides comments) will appear on your web page-->
+
+<body>
+
+  <!--Header Section Start -->
+  <header>
+
+    <!--this header-nav houses the entire header navigation across mobile and desktop-->
+    <div class="header-nav">
+
+      <!--This nav-bar houses the logo and nav items -->
+      <div class="nav-bar">
+
+        <!--This img tag houses the logo -->
+        <img id="logo" src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_938993594_391384.jpg" alt="coffee cups">
+        <!-- img tag end -->
+
+        <!--this &#9776; is unicode for the hamburger menu glyph -->
+        <label for="toggle">&#9776;</label>
+        <!--glyph end-->
+
+      </div>
+      <!--nav-bar end -->
+
+      <!--allows hamburger nav to open/close on mobile -->
+      <input type="checkbox" id="toggle">
+      <!--input end-->
+
+      <!-- houses all your navigation items-->
+      <ul class="menu-items">
+        <li><a href="#">About</a></li>
+        <li><a href="#">About</a> </li>
+        <li> <a href="#">About</a></li>
+      </ul>
+      <!--menu-items end-->
+
+    </div>
+    <!--header-nav end-->
+
+  </header>
+  <!--Header Section End -->
+
+  <!-- Main page content begin. Using this Main tag helps us organize our html better and gives us an opportunity to declare widths/other styles to the whole main page content at once, if we want to-->
+  <main>
+
+    <!--section begin. Sections help break down and organize the content even further. We can get even more specific with our targeting by using sections. Also great for accesibility -->
+    <section>
+
+    </section>
+    <!--section end-->
+
+
+    <!--section begin -->
+    <section>
+
+    </section>
+    <!--section end-->
+
+
+    <!--locations section begin -->
+    <section class="locations-section">
+
+      <div class="location-info">
+        <h1>location name</h1>
+        <p>info info info</p>
+        <p>info info info</p>
+        <a href="#"><button>google maps directions</button></a>
+      </div>
+
+       <div class="location-info">
+        <h1>location name</h1>
+        <p>info info info</p>
+        <p>info info info</p>
+        <a href="#"><button>google maps directions</button></a>
+      </div>
+
+       <div class="location-info">
+        <h1>location name</h1>
+        <p>info info info</p>
+        <p>info info info</p>
+        <a href="#"><button>google maps directions</button></a>
+      </div>
+
+    </section>
+    <!--locations section end-->
+
+
+
+
+    <!--menu section begin -->
+  <section class="food-menu-section">
+    <!-- this img tag houses photo of people eating -->
+    <img id="people-eating" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/04/09/20/istock-157528129.jpg" alt="coffee cup and coffee beans" width=380px>
+    <!-- img tag end -->
+    <!-- this img tag houses photo of hot coffee -->
+    <img id="hot-coffee" src="https://post.healthline.com/wp-content/uploads/2020/08/ways-to-make-coffee-super-healthy-732x549-thumbnail-732x549.jpg" alt="hot cup of coffee" width=380px>
+    <!-- img tag end -->
+      <div class="food-menu-info">
+        <h2>hot drinks</h2>
+        <p>hot drink 1</p>
+        <p>hot drink 2</p>
+        <p>hot drink 3</p>
+      </div>
+        <!-- this img tag houses photo of top of cold coffee -->
+        <img id="top-cold-coffee" src="https://i2.wp.com/loseitblog.com/wp-content/uploads/2019/01/Coffee-Islamorada-.png?w=1010&ssl=1" alt="foamy coffee and beans" width=380px>
+        <!-- img tag end -->
+      <div class="food-menu-info">
+        <h2>cold drinks</h2>
+        <p>cold drink 1</p>
+        <p>cold drink 2</p>
+        <p>cold drink 3</p>
+      </div>
+      <!-- this img tag houses photo of lower half of cold coffee -->
+      <img id="lower-cold-coffee" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg/1200px-T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg" alt="Turkish coffee" width=380px>
+      <!-- img tag end -->
+      <div class="food-menu-info">
+        <h2>drink specials</h2>
+        <p>special drink 1</p>
+        <p>special drink 2</p>
+        <p>special drink 3</p>
+      </div>
+      <!-- this img tag houses photo of a sandwich -->
+      <img id="sandwich" src="https://post.healthline.com/wp-content/uploads/2020/09/evidence-based-health-benefits-coffee-1200x628-facebook-1200x628.jpg" alt="lady with coffee cup" width=380px>
+      <!-- img tag end -->
+      <div class="food-menu-info">
+        <h2>sandwiches</h2>
+        <p>italiano - grilled baguette with prosciutto, mozzarella, sliced tomato, basil pesto and a touch of balsamic vinegar </p>
+        <p>seville - grilled baguette with spanish chorizo, mozzarella, sliced tomato, roasted red pepper, sun dried tomato pesto and a touch of balsamic vinegar </p>
+        <p>milano - grilled baguette with prosciutto, salami, ham, mozzarella, sliced tomato, pepperoni, basil pesto and a touch of balsamic vinegar </p>
+        <p>caprese - grilled baguette with mozzarella, sliced tomato, fresh basil (when available), basil pesto and a touch of balsamic vinegar </p>
+        <p>vegetarian - grilled herb focaccia with mozzarella, feta cheese, roasted red peppers, marinated artichoke, tomato, red onion and basil pesto </p>
+        <p>mediterranean chicken - grilled focaccia with spiced chicken breast, mozzarella, roasted red peppers, sliced tomato and sun dried pesto </p>
+      </div>
+      <!--menu section ends -->
+
+
+  </main>
+  <!--main page content end-->
+
+</body>
+<!--Overall body of document end-->
 
 </html>
