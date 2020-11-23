@@ -4,7 +4,7 @@ margin-left: 5%;
 }
 
 .container {
-  background-image: url(https://www.all-about-photo.com/images/articles/ART-722-6.jpg);
+  background-image: url("https://www.all-about-photo.com/images/articles/ART-722-6.jpg");
   background-size: cover;
   height:700px;
   margin: 0 auto;
