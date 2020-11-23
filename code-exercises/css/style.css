@@ -28,22 +28,22 @@ body {
 h1 {
   color: white;
   text-indent: 100px;
-  font-size: 50px;
+  font-size: 100px;
   font-style: normal;
 }
 
 p {
   font-family: arial;
   text-indent: 100px;
-  font-size: 30px;
+  font-size: 50px;
   margin-left: 100px;
 }
 .Ex-2{
-color: black;
+color: white;
 }
 
 a:hover {
-  color: black;
+  color: white;
 }
 
 .imagebg{
