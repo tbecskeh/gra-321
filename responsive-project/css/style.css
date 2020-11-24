@@ -24,3 +24,166 @@ p {
     background-color: MediumSeaGreen;
 }
 }
+html {
+  font-size: 16px;
+}
+/*---*/
+
+/*--since body contains all of the content on the page (it's the parent container to all content) we want to start by priming the whole page to be 100% of the screen width. That way, when we add widths to content housed within the body (children of the body parent container), the children content will never break past 100% of the screen size --*/
+body {
+margin: 0 auto;
+padding: 0;
+width: 100%;
+background-color: darkgray;
+}
+
+.locations-section {
+width: 94%;
+margin: 0 auto;
+  background-color: salmon;
+
+}
+
+.location-info {
+margin: 20px 0px;
+  background-color: ivory;
+  padding: 3%;
+}
+
+
+
+.locations-section button {
+background-color: green;
+}
+
+header {
+background-color: #EBF9FF;
+width: 100%;
+}
+
+.header-nav {
+  background-color: #EBF9FF;
+  width:90%;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  justify-content: space-between;
+  padding: 30px 0 30px 0;
+}
+
+#logo {
+height:100px;
+}
+
+#toggle {
+display:none;
+}
+
+label {
+font-size: 50px;
+line-height:100px;
+cursor: pointer;
+}
+
+ul.menu-items {
+padding: 20px 0 40px 0;
+margin: 0;
+list-style-type: none;
+text-align: left;
+border-top:3px double #000;
+
+}
+
+ul.menu-items a {
+  text-decoration:none;
+  line-height:40px;
+  text-align: left;
+  color: black;
+  display:block;
+}
+
+#toggle:checked ~ ul.menu-items {
+  display:none;
+}
+
+.people-eating {
+  width: 100%;
+}
+
+/*Menu Row Default/Mobile Styling Start*/
+
+.column-one img, .column-two img {
+width: 100%;
+overflow: hidden;
+}
+
+.menu-row-1 {
+  width 100%;
+}
+
+
+/*Menu Row Default/Mobile Styling End*/
+
+
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 500px) {
+  .header-nav {
+  background-color: #EBF9FF;
+  width:90%;
+  margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+  display:inline-block;
+  position: relative;
+  padding: 30px 0 30px 0;
+  width:60%;
+}
+
+
+#toggle {
+display:none;
+}
+
+label {
+display:none;
+}
+
+ul.menu-items, #toggle:checked ~ ul.menu-items {
+display: flex;
+margin: 0;
+list-style-type: none;
+text-align: right;
+border-top:none;
+  width: 60%;
+  justify-content: space-between;
+}
+  /*Menu Row Desktop Styling Start*/
+
+  .menu-row-1 {
+    display:flex;
+justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin: 3% auto; /*first value, 3%, is margin for top and bottom. second value, auto, is margin for left and right. Auto does the math for you, so if your container takes up 95% of the screen, it knows that there's 5% left of the screen, and divides that remaining 5% in half, placing 2.5% margin on each side. Aka, a container that's centered in the middle of the screen. */
+  }
+
+  .column-one, .column-two {
+  width: 49%;
+  }
+
+/*Menu Row Desktop Styling End*/
+
+
+}
